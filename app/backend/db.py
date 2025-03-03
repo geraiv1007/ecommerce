@@ -34,14 +34,6 @@ connect_args = {
     'port': env("DB_PORT"),
     'database': env("DB_DATABASE")
 }
-# connect_args = {
-#     'drivername': 'postgresql+asyncpg',
-#     'username': 'postgres',
-#     'password': 'homedb1007',
-#     'host': 'db',
-#     'port': '5432',
-#     'database': 'homedb'
-# }
 
 url = URL.create(**connect_args)
 engine = create_async_engine(url)

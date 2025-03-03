@@ -20,12 +20,3 @@ celery = Celery(
     backend='redis://127.0.0.1:6379/0',
     broker_connection_retry_on_startup=True
 )
-
-
-# if __name__ == '__main__':
-#     uvicorn.run(
-#         'main:app',
-#         host='127.0.0.1',
-#         port=8000,
-#         reload=True
-#     )
