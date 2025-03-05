@@ -144,9 +144,9 @@ async def login(
     scopes = []
     if user.is_admin:
         scopes = ['admin']
-    if user.is_supplier:
+    elif user.is_supplier:
         scopes = ['supplier']
-    if user.is_customer:
+    elif user.is_customer:
         scopes = ['customer']
     if not scopes:
         raise HTTPException(
